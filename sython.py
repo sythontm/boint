@@ -53,7 +53,7 @@ OWNER_ID = 5159123009 #
 @bot.on(events.NewMessage)
 async def handler(event):
     if event.sender_id == OWNER_ID:
-        await event.respond('Hello, my owner! {DEVLOO}')
+        await event.respond("""Hello, my owner! {DEVLOO}""")
         
 @sython1.on(events.NewMessage)
 async def join_channel(event):
