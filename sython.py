@@ -49,12 +49,14 @@ LOGS = logging.getLogger(__name__)
 DEVS = [5159123009]
 
 
-OWNER_ID = 5159123009 # 
+OWNER_ID = 5159123009
+
 @bot.on(events.NewMessage)
 async def handler(event):
     if event.sender_id == OWNER_ID:
-        await event.respond("""Hello, my owner! {DEVLOO}""")
-        
+        owner_message = f"Hello, my owner! Your ID is: {OWNER_ID}"
+        await event.respond(owner_message)
+ 
 @sython1.on(events.NewMessage)
 async def join_channel(event):
     try:
