@@ -56,7 +56,7 @@ async def handler(event):
     if event.sender_id == OWNER_ID:
         owner_message = f"Hello, my owner! My Owner ID is: {DEVLOO}"
         await event.respond(owner_message)
- @bot.on(events.NewMessage)
+@bot.on(events.NewMessage)
 async def handler(event):
     if event.sender_id == OWNER_IDD:
         owner_message = f"Hello, my owner! My Owner ID is: {DEVLOO}"
